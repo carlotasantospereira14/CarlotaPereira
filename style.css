@@ -1,0 +1,282 @@
+
+/*Estilo Geral*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+
+
+}    
+
+html{
+    scroll-behavior: smooth;
+} 
+
+body{
+    background-color: beige;
+    height: 100vh;
+
+}    
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}    
+
+.flex{
+    display: flex;
+
+}  
+h2.TITLE{
+    color: rgba(221,220,0,255);
+    font-size: 48px;
+    text-align: center;
+}
+
+/*ESTILO HEADER*/
+
+
+header{
+    padding: none;
+
+}   
+
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}    
+
+header a{
+    color: black;
+    text-decoration: none;
+
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 80px;
+
+}   
+
+/*ESTILO INICIO SITE*/
+
+section.inicio-site{
+    padding: 40px 4%;
+
+
+}
+
+section.inicio-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}  
+
+.inicio-site h1{
+    font-size: 60px;
+    line-height: 55px;
+
+
+}   
+
+.inicio-site .txt-inicio-site h1 span{
+    color: rgba(221,220,0,255);
+}    
+
+.inicio-site .txt-inicio-site p{
+    margin: 70px 0;
+}
+
+/*ESTILO ABOUT ME*/
+
+section.about-me{
+    padding: 40px 4%;
+
+}
+
+section.about-me .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+
+
+.about-me .txt-sobre h2{
+    font-size: 60px;
+    color: rgba(221,220,0,255);
+    margin-bottom: 10px;
+}
+.about-me .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*ESTILO EXPERIENCES*/
+
+section.experience{
+    padding: 40px 4%;
+
+}
+
+.experience .experience-box{
+    padding: 40px;
+}
+
+.experience .experience-box i{
+    font-size: 70px;
+    color: rgba(221,220,0,255);
+
+}
+
+.experience .experience-box h3{
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.experience .experience-box p{
+    text-align: justify;
+}
+
+/*ESTILO PROJECTS*/
+
+section.projects{
+    padding: 80px 4%;
+}
+
+section.projects .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-proj{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    position: relative;
+    border-radius: 40px;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(193, 220, 74, 0.726);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+
+}    
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+section.projects p{
+    padding:0px;
+    padding-left: 60px;
+    text-align: justify;
+}
+
+section.projects h3{
+    color: rgba(221,220,0,255);
+    padding-top: 40px;
+    padding-left: 60px;
+
+}   
+
+nav.sewingdescpt ul {
+    display: flex; /* Make the list items align horizontally */
+    justify-content: space-evenly; /* Center the items horizontally */
+    padding: 20px;
+    list-style-type: none; /* Remove bullets */
+}
+
+nav.sewingdescpt ul li {
+    margin: 0 100px; /* Add spacing between each item */
+}
+
+nav.sewingdescpt ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #000000; /* Set text color */
+    font-size: 30px; /* Adjust the font size */
+    font-weight: bold; /* Make the links bold */
+}
+
+
+
+
+/*ESTILO CONTACTS*/
+
+section.contacts{
+    padding: 80px 4%;
+
+}
+
+
+form{
+   max-width: 500px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 40px;
+
+
+
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(186, 220, 74, 0.726);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+
+}    
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+
+} 
+
+form .btn-send{
+    margin-top: 20px;
+    text-align: center;
+
+
+}
+
+form .btn-send input{
+    width: 120px;
+    background-color:rgba(193, 220, 74, 0.726) ;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+}
